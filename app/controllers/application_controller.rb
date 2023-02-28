@@ -40,4 +40,18 @@ class ApplicationController < Sinatra::Base
       }.to_json
     end
 
+    # Patch Product
+  patch "product/update/:id" do 
+    product = Product.find(params[:id])
+    product.update(
+      title: params[:title],
+      category: params[:category],
+      description: params[:description],
+      price: params[:price],
+      image_url: params[:image_url] 
+    )
+    product.to_json
+  end
+
+
 end
