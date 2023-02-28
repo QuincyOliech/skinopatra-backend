@@ -10,5 +10,12 @@ p1 = Product.create(
     
 )
 
+#create user instance 
+20.times do
+    u1 = User.create(
+        name: Faker::Name.name
+    )
+end
+
 
 puts "✅ Done seeding!"
