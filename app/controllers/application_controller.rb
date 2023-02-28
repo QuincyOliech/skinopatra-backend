@@ -53,5 +53,15 @@ class ApplicationController < Sinatra::Base
     product.to_json
   end
 
+  #Delete a Product
+  delete "/product/:id" do
+    product = Product.find(params[:id])
+    product.destroy
+    {
+      "Message":"Successfully deleted a Product",
+      "Status":"HTTP_400"
+    }
+  end
+
 
 end
