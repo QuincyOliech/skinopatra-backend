@@ -17,5 +17,12 @@ p1 = Product.create(
     )
 end
 
+#create event instance
+e1 = Review.create(
+    star_rating: rand(1..10),
+    comment:"",
+    user_id: u1.id,
+    product_id: p1.id
+)
 
 puts "✅ Done seeding!"
