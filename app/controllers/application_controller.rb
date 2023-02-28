@@ -24,4 +24,20 @@ class ApplicationController < Sinatra::Base
         )
       end
 
+  #post product
+    post "/product/" do
+      product = Product.create(
+        title: params[:title],
+        category: params[:category],
+        description: params[:description],
+        price: params[:price],
+        image_url: params[:image_url] 
+      )
+      product.save
+      {
+        "Message": "Created Successfully",
+        "Status": "HTTP_200_OK"
+      }.to_json
+    end
+
 end
