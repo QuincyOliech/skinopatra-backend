@@ -42,4 +42,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_01_191825) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "products", "categories"
 end
