@@ -7,7 +7,7 @@ p1 = Product.create(
     title: Faker::Commerce.product_name,
     category: categoryarr.sample,
     description: Faker::Lorem.sentence,
-    price: rand(50..150),
+    price: rand(50..150).to_f,
     image_url: "https://bit.ly/41BEeqy"    
 )
 rand(1..5).times do
