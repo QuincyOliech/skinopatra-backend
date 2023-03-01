@@ -23,9 +23,9 @@ class ApplicationController < Sinatra::Base
           }
         )
       end
-
-  #post product
-    post "/product/" do
+      
+    #post product
+    post "/products/" do
       product = Product.create(
         title: params[:title],
         category: params[:category],
@@ -41,7 +41,7 @@ class ApplicationController < Sinatra::Base
     end
 
     # Patch Product
-  patch "product/update/:id" do 
+  patch "/products/:id" do 
     product = Product.find(params[:id])
     product.update(
       title: params[:title],
@@ -54,7 +54,7 @@ class ApplicationController < Sinatra::Base
   end
 
   #Delete a Product
-  delete "/product/:id" do
+  delete "/products/:id" do
     product = Product.find(params[:id])
     product.destroy
     {
