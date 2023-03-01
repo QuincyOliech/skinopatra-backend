@@ -23,9 +23,9 @@ class ApplicationController < Sinatra::Base
           }
         )
       end
-      
+
     #post product
-    post "/products/" do
+    post "/products" do
       product = Product.create(
         title: params[:title],
         category: params[:category],
