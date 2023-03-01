@@ -6,7 +6,9 @@ class ApplicationController < Sinatra::Base
     products = Product.all
     products.to_json(
       include: {
-        category: {},
+        category: {
+          only: [:id, :name]
+        },
         reviews: {
           include: :user
         }
@@ -19,7 +21,9 @@ class ApplicationController < Sinatra::Base
     product = Product.find(params[:id])
     product.to_json(
       include: {
-        category: {},
+        category: {
+          only: [:id, :name]
+        },
         reviews: {
           include: :user
         }
