@@ -31,7 +31,4 @@ u1 = User.create(
 end
 
 
-#create event instance
-
-
 puts "✅ Done seeding!"

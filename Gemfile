@@ -32,3 +32,8 @@ group :test do
     gem "rspec"
     gem "rspec-json_expectations"
 end
+
+# group :production do
+#     gem 'pg', '~> 1.4', '>= 1.4.6' #postgres adapter
+#     gem 'puma', '~> 6.1', '>= 6.1.1' #puma
+# end

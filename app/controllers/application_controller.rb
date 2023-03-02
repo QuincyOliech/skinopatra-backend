@@ -25,7 +25,7 @@ get '/products/:id' do
   end
 
   #post product
-  post "/product/" do
+  post "/products" do
     product = Product.create(
       title: params[:title],
       category: params[:category],
