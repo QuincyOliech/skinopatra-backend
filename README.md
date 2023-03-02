@@ -47,3 +47,19 @@ Used Active Record association macros and Active Record query methods (i.e. has_
 * User#products
   Returns a collection of all the Products that the User has reviewed
 
+## Endpoints
+React app linked to backend using server running on port http://localhost:9292 to retrieve the product data and app to be deployed later on Netlify and railway.
+
+## Core Deliverables 
+A user should be able to:
+ * See images of all products rendered in product collection from the database
+ * add an Item to the list of products,functionality to be restricted to the admin side
+ * search for product categories 
+ * delete an Item from the list of products
+ * update item details 
+
+## Author & License
+Linet Oliech is the sole contributor to this project. Project is licensed and author does not grant permissions for Commercial use, Reproduction, Distribution, Modification, Patent and Private use.Copyright (c) 2023 Linet Oliech
+
+## Contact Information
+For any queries or enquiries feel free to reach out at oliechlin@gmail.com
