@@ -12,6 +12,11 @@ Product - User is a many to many relationship.
 * Create API routes in Sinatra that handles at least three different CRUD actions for at least one of your Active Record models.
 * Build a separate React frontend application that interacts with the API to perform CRUD actions. 
 
+## Technologies used
+1. Ruby
+2. Sinatra
+3. SQLite3
+
 ## Entity Relationship Diagram(ERD)
 
 ![alt text](images/dbdiagram.png)
