@@ -3,19 +3,14 @@ puts "🌱 Seeding products..."
 #create prodcut instance 
 25.times do
   
-    categories = ["treatments and serums","cleansers","moisturizers","body scrubs & exfoliators","bath & body", "tools & devices", "lip care"]
-    categories.each do |name|
-        Category.find_or_create_by(name: name)
-    end
-    categories = Category.all
-
+    categoryarr = ["treatments and serums","cleansers","moisturizers","body scrubs & exfoliators","bath & body", "tools & devices", "lip care"]
       
 p1 = Product.create(
     title: Faker::Commerce.product_name,
+    category: categoryarr.sample,
     description: Faker::Lorem.sentence,
-    price: rand(10..100).to_f,
-    image_url: "https://bit.ly/41BEeqy",
-    category: categories.sample   
+    price: rand(10..100),
+    image_url: "https://bit.ly/41BEeqy" 
 )
 
 
