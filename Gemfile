@@ -14,7 +14,7 @@ gem 'rack-cors'
 
 gem 'rake'
 
-gem 'sqlite3'
+# gem 'sqlite3'
 
 gem 'require_all'
 
@@ -33,7 +33,7 @@ group :test do
     gem "rspec-json_expectations"
 end
 
-# group :production do
-#     gem 'pg', '~> 1.4', '>= 1.4.6' #postgres adapter
-#     gem 'puma', '~> 6.1', '>= 6.1.1' #puma
-# end
+group :production do
+    gem 'pg', '~> 1.4', '>= 1.4.6' #postgres adapter
+    gem 'puma', '~> 6.1', '>= 6.1.1' #puma
+end
